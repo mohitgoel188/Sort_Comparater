@@ -6,7 +6,6 @@ int selsort(int*);
 int bubsort(int*);
 int insort(int*,int);
 int quicksort(int*,int,int);
-int mergesort(int*);
 int initial(int*);
 int display(int*);
 int swape(int*,int*);
