@@ -3,12 +3,13 @@
 #include<malloc.h>
 using namespace std;
 int selsort(int*);
-int bubsort(int*);
+void bubsort(int*);
 int insort(int*,int);
 int quicksort(int*,int,int);
-int initial(int*);
-int display(int*);
-int swape(int*,int*);
+void initial(int*);
+void display(int*);
+void swape(int*,int*);
+void heapSort(int*);
 int n,i,j,k;
 int main()
 {
@@ -124,19 +125,19 @@ int main()
       }
     }
 }
-int display(int *a)
+void display(int *a)
 {
     cout<<"\n";
     for(i=0;i<n;i++)
         cout<<a[i]<<" ";
 }
-int initial(int *a)
+void initial(int *a)
 {   for(j=0,i=n;i>0;i--)
     {  *(a+j)=i;
         j++;
     }
 }
-int bubsort(int* a)
+void bubsort(int* a)
 {
     for(i=n;i>0;i--)
     {
@@ -204,9 +205,17 @@ int quicksort(int *a,int lb,int ub)
       quicksort(a,j+1,ub);
     return 0;
 }
-int swape(int *a,int *b)
+void swape(int *a,int *b)
 {
     int temp=*a;
     *a=*b;
     *b=temp;
+}
+
+void heapSort(int *a)
+{
+    void minHeapify(int *a,int ind)
+    {
+        
+    }
 }
